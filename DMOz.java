@@ -14,7 +14,7 @@ public class DMOz {
         // QueryString query = new QueryString();
         // query.add("q", target);
         try {
-            URL u = new URL("http://www.google.com/search?q" + target);`
+            URL u = new URL("http://www.google.com/search?q" + target);
             try (InputStream in = new BufferedInputStream(u.openStream())) {
                 InputStreamReader theHTML = new InputStreamReader(in);
                 int c;
